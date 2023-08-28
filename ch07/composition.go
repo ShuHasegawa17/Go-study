@@ -34,5 +34,5 @@ func main() {
 
 	m.Reports = m.addEmpoyees()
 	fmt.Println(m.Employee) // {花子 000}
-	fmt.Println(m.Reports)	// [{太郎 100} {治郎 200}]
+	fmt.Println(m.Reports)	// [{太郎 100} {治郎 200}]	
 }

@@ -34,6 +34,7 @@ func doUpdate2(c Counter) {
 
 func main() {
 	var c Counter
+	c.Incremament()
 	doUpdate(&c)
 	c.toString()
 	doUpdate2(c)

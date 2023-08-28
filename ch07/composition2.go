@@ -12,6 +12,7 @@ func (i Inner) IntPrinter(val int) string {
 
 func (i Inner) Double() string {
 	result := i.A * 2
+	// ここで呼び出されるのは、innerのIntPrinter
 	return i.IntPrinter((result))
 }
 
@@ -31,6 +32,6 @@ func main() {
 		},
 		S: "Hello",
 	}
-	fmt.Println(o.Double())
+	fmt.Println(o.Double()) //Inner: 20
 }
 
