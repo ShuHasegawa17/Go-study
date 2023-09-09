@@ -6,7 +6,7 @@ import (
 )
 
 func doubleEven(i int) (int, error) {
-	if i % 2 != 0 {
+	if i%2 != 0 {
 		// 文字列を返す場合は、errors.NewでOK
 		// return 0, errors.New("偶数ではありません")
 		// fmt.Errorfでフォーマットも使用できる
